@@ -17,9 +17,11 @@ this is a skeleton of an ionic 2 app that `yarn` cannot install but `npm` can
 
 ## Error
 
-```yarn install v0.16.1
+```
+yarn install v0.16.1
 info No lockfile found.
 warning yarn.relative.imports: No license field
 [1/4] 🔍  Resolving packages...
 error "/Users/Zanza00/dev/github/yarn.relative.imports/typings/humanize-duration" doesn't exist.
-info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.```
+info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.
+```
