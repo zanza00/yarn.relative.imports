@@ -1,0 +1,66 @@
+$text-color: #222;
+$card-md-border-radius: 4px;
+$card-md-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.1),
+                     0 1px 5px 0 rgba(0, 0, 0, 0.1);
+
+$colors: (
+  primary:        #ef8411,
+  secondary:      #95d553,
+  danger:         #e53838,
+  light:          #f4f4f4,
+  dark:           #1b2445,
+  favorite:       #00589b,
+  mild:           #999999,
+  divider:        #dedede,
+  lightFavorite:  #2477bb,
+  black:          $text-color
+);
+
+$task-colors: (
+  not-started:        #4a90e2,
+  waiting-on-others:  #ffd900,
+  in-progress:        #f8981d,
+  deferred:           color($colors, danger),
+  completed:          color($colors, secondary)
+);
+
+$gradient: (
+  start:  rgb(10, 50, 77),
+  end:    rgb(18, 91, 137)
+);
+
+@function svg-width-calculator($viewBox-width, $viewBox-height, $final-height) {
+  @return ($final-height * $viewBox-width) / $viewBox-height;
+}
+
+@function svg-height-calculator($viewBox-width, $viewBox-height, $final-width) {
+  @return ($final-width * $viewBox-height) / $viewBox-width;
+}
+
+@mixin phoneMediaQuery() {
+  @media (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin tabletMediaQuery() {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin alignCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin centeredBlock($width: 50%) {
+  width: $width;
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

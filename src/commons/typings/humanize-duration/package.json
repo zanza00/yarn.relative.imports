@@ -1,0 +1,7 @@
+{
+  "name": "@types/humanize-duration",
+  "version": "0.0.1",
+  "dependencies": {
+    "humanize-duration": "^3.9.1"
+  }
+}

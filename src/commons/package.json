@@ -1,0 +1,25 @@
+{
+  "name": "zanza00.app.commons",
+  "author": "Zanza00",
+  "version": "0.0.1",
+  "dependencies": {
+    "@ionic/storage": "^1.1.2",
+    "@types/flat": "0.0.28",
+    "@types/humanize-duration": "file:typings/humanize-duration",
+    "@types/lodash": "4.14.36",
+    "@types/ms-adal": "file:typings/ms-adal",
+    "@types/vcf": "file:typings/vcf",
+    "flat": "^2.0.1",
+    "ionic-angular": "2.0.0-rc.1",
+    "ionic-native": "2.2.3",
+    "ionicons": "^3.0.0",
+    "lodash": "^4.15.0",
+    "moment": "^2.15.1",
+    "vcf": "1.1.2"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "^0.0.34",
+    "tslint-ionic-rules": "0.0.4",
+    "typescript": "~2.0.3"
+  }
+}

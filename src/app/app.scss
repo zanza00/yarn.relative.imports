@@ -1,0 +1,62 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+@import "../commons/theme/commons.app";
+
+.alert-md.select-alert {
+  .alert-wrapper {
+    width: 80%;
+    max-width: 80%;
+    border-radius: $card-md-border-radius;
+    background-color: #fff;
+    box-shadow: 0 0 32px rgba(153, 153, 153, .5);
+    overflow: hidden;
+  }
+
+  .alert-head {
+    display: none;
+  }
+
+  [aria-checked=true] .alert-radio-label {
+    color: inherit;
+  }
+
+  .alert-radio-group {
+    border: 0;
+    padding: 8px 0;
+    max-height: 398px;
+
+    .alert-radio {
+      min-height: 60px;
+      padding-left: 8px;
+
+      &:first-child {
+        .alert-radio-label {
+          font-style: normal;
+          color: $text-color;
+        }
+      }
+
+      .alert-radio-label {
+        font-size: 1.7rem;
+        font-style: italic;
+        padding-left: 32px;
+        color: color($colors, mild);
+      }
+    }
+  }
+}
